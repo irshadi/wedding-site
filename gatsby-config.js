@@ -2,7 +2,9 @@ module.exports = {
   siteMetadata: {
     title: "My Site",
     author: "Irshadi Bagasputro",
-    url: ""
+    data: {
+      weddingDate: "2021-06-19T16:00:00Z"
+    }
   },
   plugins: [
     {
