@@ -1,15 +1,32 @@
 module.exports = {
   siteMetadata: {
-    title: "wedding-site",
+    title: "My Site",
+    author: "Irshadi Bagasputro",
+    url: ""
   },
   plugins: [
-    "gatsby-plugin-image",
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: "@chakra-ui/gatsby-plugin",
       options: {
-        trackingId: "",
-      },
+        /**
+         * @property {boolean} [resetCSS=true]
+         * if false, this plugin will not use `<CSSReset />
+         */
+        resetCSS: true,
+        /**
+         * @property {boolean} [isUsingColorMode=true]
+         * if false, this plugin will not use <ColorModeProvider />
+         */
+        isUsingColorMode: true
+      }
     },
+    "gatsby-plugin-image",
+    // {
+    //   resolve: "gatsby-plugin-google-analytics",
+    //   options: {
+    //     trackingId: "",
+    //   },
+    // },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
@@ -17,9 +34,9 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "./src/images/"
       },
-      __key: "images",
-    },
-  ],
+      __key: "images"
+    }
+  ]
 };
