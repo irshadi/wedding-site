@@ -1,0 +1,6 @@
+export const COLOR_MAP = {
+  BEIGE: "#DFD8CE",
+  CHARCOAL: "#989284",
+  DARK_GRAY: "#1E3442",
+  NAVY_BLUE: "284459"
+};
