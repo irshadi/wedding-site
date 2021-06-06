@@ -11,6 +11,7 @@ export const MainPage = () => {
       <HeaderViews />
       <StoriesViews />
       <CoupleViews />
+      <DateViews />
     </React.Fragment>
   );
 };

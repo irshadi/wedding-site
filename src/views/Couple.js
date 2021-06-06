@@ -12,10 +12,7 @@ import { GridItem } from "@chakra-ui/layout";
 export const CoupleViews = () => {
   const { theme } = useColorMode();
   return (
-    <Box
-      mx="12.5em"
-      // bg="red"
-    >
+    <Box mx="12.5em">
       <SectionHeading title="Happy Couple" />
       <Grid templateColumns="repeat(2, 2fr)" gap={5}>
         <GridItem bg="red" colSpan={1}>
