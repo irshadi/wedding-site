@@ -3,6 +3,7 @@ import { Flex, Box, Text, Heading } from "@chakra-ui/layout";
 import { SectionHeading } from "../components/SectionHeading";
 import { useCountdown } from "../hooks/useCountdown";
 import { COLOR_MAP } from "../constants/color";
+import isEmpty from "lodash/isEmpty";
 
 const Countdown = ({ time, value }) => {
   return (
@@ -42,9 +43,10 @@ export const DateViews = () => {
     <Box mx="12.5em" mt="2em">
       <SectionHeading title="Event Date" />
       <Flex bg={COLOR_MAP.BEIGE} p="2em" justify="space-between">
-        {Object.entries(countdown).map(([time, value], idx) => (
-          <Countdown key={idx} time={time} value={value} />
-        ))}
+        {!isEmpty(countdown) &&
+          Object.entries(countdown).map(([time, value], idx) => (
+            <Countdown key={idx} time={time} value={value} />
+          ))}
       </Flex>
     </Box>
   );
