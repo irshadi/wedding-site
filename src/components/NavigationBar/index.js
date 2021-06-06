@@ -6,7 +6,6 @@ import { COLOR_MAP } from "../../constants/color";
 
 const SiteModeButton = () => {
   const { isUsingDarkMode, toggleColorMode } = useColorMode();
-  // const color = isUsingDarkMode ?
 
   return (
     <Button
@@ -112,7 +111,7 @@ export const NavigationBar = () => {
             color: COLOR_MAP.CHARCOAL_SHADE_3
           }}
         >
-          Couple
+          Story
         </Button>
         <Button
           mx="1em"
