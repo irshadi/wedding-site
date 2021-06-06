@@ -7,9 +7,13 @@ export const useColorMode = () => {
     LIGHT: "light"
   };
 
+  const isUsingDarkMode = colorMode === COLOR_MODE_MAP.DARK;
+  const theme = isUsingDarkMode ? "international" : "traditional";
+
   return {
-    isUsingDarkMode: colorMode === COLOR_MODE_MAP.DARK,
+    isUsingDarkMode,
     colorMode,
-    toggleColorMode
+    toggleColorMode,
+    theme
   };
 };

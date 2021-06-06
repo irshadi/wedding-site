@@ -1,3 +1,4 @@
+import { Box } from "@chakra-ui/layout";
 import React from "react";
 import { CoupleViews } from "./Couple";
 import { DateViews } from "./Date";
@@ -8,9 +9,8 @@ export const MainPage = () => {
   return (
     <React.Fragment>
       <HeaderViews />
-      <DateViews />
-      <CoupleViews />
       <StoriesViews />
+      <CoupleViews />
     </React.Fragment>
   );
 };

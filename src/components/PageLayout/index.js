@@ -1,11 +1,12 @@
 import React from "react";
+import { Box } from "@chakra-ui/layout";
 import { NavigationBar } from "../NavigationBar";
 
 export const PageLayout = ({ children }) => {
   return (
-    <React.Fragment>
+    <Box overflowX="hidden">
       <NavigationBar />
       {children}
-    </React.Fragment>
+    </Box>
   );
 };

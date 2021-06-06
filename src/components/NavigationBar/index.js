@@ -2,6 +2,7 @@ import React from "react";
 import { Flex, Text } from "@chakra-ui/layout";
 import { Button } from "@chakra-ui/button";
 import { useColorMode } from "../../hooks/useColorMode";
+import { COLOR_MAP } from "../../constants/color";
 
 const SiteModeButton = () => {
   const { isUsingDarkMode, toggleColorMode } = useColorMode();
@@ -77,7 +78,7 @@ const SiteModeButton = () => {
 export const NavigationBar = () => {
   return (
     <Flex
-      w="100vw"
+      w="100%"
       h="3.5em"
       alignItems="center"
       bg="transparent"
@@ -85,21 +86,54 @@ export const NavigationBar = () => {
       zIndex="2"
     >
       <Flex w="50%" h="100%" alignItems="center" px="1em">
-        <Button variant="ghost" fontWeight="bold">
+        <Button
+          mx="1em"
+          my="1em"
+          variant="link"
+          fontWeight="700"
+          fontSize="0.9em"
+          textTransform="uppercase"
+          color={COLOR_MAP.CHARCOAL_SHADE_1}
+          _hover={{
+            color: COLOR_MAP.CHARCOAL_SHADE_3
+          }}
+        >
           Home
         </Button>
-        <Button variant="ghost" fontWeight="bold">
+        <Button
+          mx="1em"
+          my="1em"
+          variant="link"
+          fontWeight="700"
+          fontSize="0.9em"
+          textTransform="uppercase"
+          color={COLOR_MAP.CHARCOAL_SHADE_1}
+          _hover={{
+            color: COLOR_MAP.CHARCOAL_SHADE_3
+          }}
+        >
           Couple
         </Button>
-        <Button variant="ghost" fontWeight="bold">
+        <Button
+          mx="1em"
+          my="1em"
+          variant="link"
+          fontWeight="700"
+          fontSize="0.9em"
+          textTransform="uppercase"
+          color={COLOR_MAP.CHARCOAL_SHADE_1}
+          _hover={{
+            color: COLOR_MAP.CHARCOAL_SHADE_3
+          }}
+        >
           Gallery
         </Button>{" "}
       </Flex>
-      <Flex w="50%" justifyContent="flex-end" alignItems="center">
+      {/* <Flex w="50%" justifyContent="flex-end" alignItems="center">
         <Flex m="1em">
           <SiteModeButton />
         </Flex>
-      </Flex>
+      </Flex> */}
     </Flex>
   );
 };
