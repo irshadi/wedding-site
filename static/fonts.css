@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "MAK";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/MAK.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "MAK-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/MAK-bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Javassoul";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Javassoul.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Chromate";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Chromate.woff2") format("woff2");
+}

@@ -5,7 +5,7 @@ import { useColorMode } from "../../hooks/useColorMode";
 
 const SiteModeButton = () => {
   const { isUsingDarkMode, toggleColorMode } = useColorMode();
-  // const color = isUsingDarkMode ? 
+  // const color = isUsingDarkMode ?
 
   return (
     <Button
@@ -76,17 +76,29 @@ const SiteModeButton = () => {
 
 export const NavigationBar = () => {
   return (
-    <Flex w="100vw" h="3.5em" bg="green" alignItems="center">
-      <Flex w="50%" h="100%" alignItems="center">
-        <Text>Selaras</Text>
+    <Flex
+      w="100vw"
+      h="3.5em"
+      alignItems="center"
+      bg="transparent"
+      pos="absolute"
+      zIndex="2"
+    >
+      <Flex w="50%" h="100%" alignItems="center" px="1em">
+        <Button variant="ghost" fontWeight="bold">
+          Home
+        </Button>
+        <Button variant="ghost" fontWeight="bold">
+          Couple
+        </Button>
+        <Button variant="ghost" fontWeight="bold">
+          Gallery
+        </Button>{" "}
       </Flex>
       <Flex w="50%" justifyContent="flex-end" alignItems="center">
-        <Button variant="ghost">Date</Button>
-        <Button variant="ghost">Our Story</Button>
-        <Button variant="ghost">Gallery</Button>
-        <Button variant="ghost" borderRadius="full">
+        <Flex m="1em">
           <SiteModeButton />
-        </Button>
+        </Flex>
       </Flex>
     </Flex>
   );
