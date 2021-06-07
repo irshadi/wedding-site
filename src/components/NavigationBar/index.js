@@ -3,6 +3,7 @@ import { Flex, Text } from "@chakra-ui/layout";
 import { Button } from "@chakra-ui/button";
 import { useColorMode } from "../../hooks/useColorMode";
 import { COLOR_MAP } from "../../constants/color";
+import { navigate } from "gatsby-link";
 
 const SiteModeButton = () => {
   const { isUsingDarkMode, toggleColorMode } = useColorMode();
@@ -86,6 +87,7 @@ export const NavigationBar = () => {
     >
       <Flex w="50%" h="100%" alignItems="center" px="1em">
         <Button
+          onClick={() => navigate("/")}
           mx="1em"
           my="1em"
           variant="link"
@@ -100,6 +102,7 @@ export const NavigationBar = () => {
           Home
         </Button>
         <Button
+          onClick={() => navigate("/#our-story", "our-story")}
           mx="1em"
           my="1em"
           variant="link"
@@ -114,6 +117,7 @@ export const NavigationBar = () => {
           Story
         </Button>
         <Button
+          onClick={() => navigate("/#gallery")}
           mx="1em"
           my="1em"
           variant="link"
@@ -126,7 +130,7 @@ export const NavigationBar = () => {
           }}
         >
           Gallery
-        </Button>{" "}
+        </Button>
       </Flex>
       {/* <Flex w="50%" justifyContent="flex-end" alignItems="center">
         <Flex m="1em">

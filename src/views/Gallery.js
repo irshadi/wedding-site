@@ -9,8 +9,8 @@ import { GridItem } from "@chakra-ui/layout";
 export const GalleryViews = () => {
   const { theme } = useColorMode();
   return (
-    <Box>
-      <SectionHeading title="Gallery" />
+    <Box id="gallery">
+      <SectionHeading title="Gallery" label="Taken from our pre wedding session" />
 
       <Grid templateColumns="repeat(6, 1fr)" gap={0}>
         {Array.from({ length: 6 }).map((_, idx) => (

@@ -1,23 +1,21 @@
 import React from "react";
 import moment from "moment";
 import "moment/locale/en-gb";
-import { useSiteMetadata } from "./useSiteMetadata";
 
-const COUNTDOWN_STATUS_MAP = {
+export const COUNTDOWN_STATUS_MAP = {
   BEFORE: "BEFORE",
   AFTER: "AFTER",
   WEDDING_DAY: "WEDDING_DAY"
 };
 
 export const useCountdown = () => {
-  const {
-    data: { weddingDate: _wd }
-  } = useSiteMetadata();
   const [countdown, setCountdown] = React.useState({});
 
   const today = new Date();
-  const weddingDay = new Date(_wd);
-  const difference = +weddingDay - +today;
+  // 2021, 5, 7, 15, 0, 0
+  // Mon Jun 07 2021 22:00:00 GMT+0700 (WIB)
+  const weddingDay = new Date(Date.UTC(2021, 5, 19, 9, 0, 0));
+  const difference = Number(weddingDay) - Number(today);
 
   const getCountdownEnum = () => {
     if (
@@ -40,34 +38,42 @@ export const useCountdown = () => {
   };
 
   const generateRemainingTime = () => {
-    const shouldDisplayTime = getCountdownEnum() !== COUNTDOWN_STATUS_MAP.AFTER;
+    const status = getCountdownEnum();
+    const shouldDisplayTime = status !== COUNTDOWN_STATUS_MAP.AFTER;
     if (shouldDisplayTime) {
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((difference / 1000 / 60) % 60);
+      const seconds = Math.floor((difference / 1000) % 60);
       return {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)).toLocaleString(
-          "en-US",
-          {
-            minimumIntegerDigits: 2,
-            useGrouping: false
-          }
-        ),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24).toLocaleString(
-          "en-US",
-          {
-            minimumIntegerDigits: 2,
-            useGrouping: false
-          }
-        ),
-        minutes: Math.floor((difference / 1000 / 60) % 60).toLocaleString(
-          "en-US",
-          {
-            minimumIntegerDigits: 2,
-            useGrouping: false
-          }
-        ),
-        seconds: Math.floor((difference / 1000) % 60).toLocaleString("en-US", {
-          minimumIntegerDigits: 2,
-          useGrouping: false
-        })
+        days:
+          days < 0
+            ? 0
+            : days.toLocaleString("en-US", {
+                minimumIntegerDigits: 1,
+                useGrouping: false
+              }),
+        hours:
+          hours < 0
+            ? 0
+            : hours.toLocaleString("en-US", {
+                minimumIntegerDigits: 2,
+                useGrouping: false
+              }),
+        minutes:
+          minutes < 0
+            ? 0
+            : minutes.toLocaleString("en-US", {
+                minimumIntegerDigits: 2,
+                useGrouping: false
+              }),
+        seconds:
+          seconds < 0
+            ? 0
+            : seconds.toLocaleString("en-US", {
+                minimumIntegerDigits: 2,
+                useGrouping: false
+              })
       };
     }
   };

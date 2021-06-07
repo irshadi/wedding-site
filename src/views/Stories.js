@@ -1,18 +1,14 @@
 import React from "react";
-import { Box, Flex } from "@chakra-ui/layout";
-import { Heading } from "@chakra-ui/layout";
-import { Text } from "@chakra-ui/layout";
+import { Box, Grid, Text } from "@chakra-ui/layout";
 import { Image } from "@chakra-ui/image";
 import { useColorMode } from "../hooks/useColorMode";
-import { COLOR_MAP } from "../constants/color";
-import { Grid } from "@chakra-ui/layout";
 import { SectionHeading } from "../components/SectionHeading";
 
 export const StoriesViews = () => {
   const { theme } = useColorMode();
   return (
-    <Box pt="2.5em" mx="12.5em">
-      <SectionHeading title="Our Story" />
+    <Box pt="2.5em" mx="12.5em" id="our-story">
+      <SectionHeading title="Our Story" label="A glimpse of our story" />
       <Grid templateColumns="repeat(2, 1fr)" gap={10}>
         <Image src={`images/${theme}_main_header.jpg`} fit="cover" />
         <Text fontFamily="Georgia">
@@ -36,10 +32,6 @@ export const StoriesViews = () => {
           augue. Fusce pharetra nulla sed eros dignissim ornare ac eget dui.
         </Text>
       </Grid>
-      <Flex pt="2em" justify="space-arround">
-        <Flex w="50%" justifyContent="start"></Flex>
-        <Flex w="50%" flexDir="column"></Flex>
-      </Flex>
     </Box>
   );
 };

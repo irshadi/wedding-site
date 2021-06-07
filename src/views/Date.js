@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex, Box, Text, Heading } from "@chakra-ui/layout";
 import { SectionHeading } from "../components/SectionHeading";
-import { useCountdown } from "../hooks/useCountdown";
+import { useCountdown, COUNTDOWN_STATUS_MAP } from "../hooks/useCountdown";
 import { COLOR_MAP } from "../constants/color";
 import isEmpty from "lodash/isEmpty";
 
@@ -37,11 +37,12 @@ const Countdown = ({ time, value }) => {
 };
 
 export const DateViews = () => {
-  const { countdown, getCountdownEnum, getRelativeTime } = useCountdown();
+  const { countdown, getCountdownEnum } = useCountdown();
+  const status = getCountdownEnum();
 
-  return (
+  return status === COUNTDOWN_STATUS_MAP.AFTER ? null : (
     <Box mx="12.5em" mt="2em">
-      <SectionHeading title="Event Date" />
+      <SectionHeading title="Event Date" label="Countdown to our wedding day" />
       <Flex bg={COLOR_MAP.BEIGE} p="2em" justify="space-between">
         {!isEmpty(countdown) &&
           Object.entries(countdown).map(([time, value], idx) => (

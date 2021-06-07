@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex } from "@chakra-ui/layout";
+import { Box } from "@chakra-ui/layout";
 import { SectionHeading } from "../components/SectionHeading";
 import { Image } from "@chakra-ui/image";
 import { useColorMode } from "../hooks/useColorMode";
@@ -13,7 +13,10 @@ export const CoupleViews = () => {
   const { theme } = useColorMode();
   return (
     <Box mx="12.5em">
-      <SectionHeading title="Happy Couple" />
+      <SectionHeading
+        title="Happy Couple"
+        label="A little bit of our background"
+      />
       <Grid templateColumns="repeat(2, 2fr)" gap={5}>
         <GridItem bg="red" colSpan={1}>
           <Image src={`images/${theme}_irshadi.jpg`} fit="contain" />

@@ -3,7 +3,7 @@ module.exports = {
     title: "My Site",
     author: "Irshadi Bagasputro",
     data: {
-      weddingDate: "2021-06-19 16:00"
+      weddingDate: "2021-06-19T16:00:00Z"
     }
   },
   plugins: [
