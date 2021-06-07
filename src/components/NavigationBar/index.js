@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Text } from "@chakra-ui/layout";
+import { Flex } from "@chakra-ui/layout";
 import { Button } from "@chakra-ui/button";
 import { useColorMode } from "../../hooks/useColorMode";
 import { COLOR_MAP } from "../../constants/color";
@@ -132,11 +132,11 @@ export const NavigationBar = () => {
           Gallery
         </Button>
       </Flex>
-      {/* <Flex w="50%" justifyContent="flex-end" alignItems="center">
+      <Flex w="50%" justifyContent="flex-end" alignItems="center">
         <Flex m="1em">
           <SiteModeButton />
         </Flex>
-      </Flex> */}
+      </Flex>
     </Flex>
   );
 };

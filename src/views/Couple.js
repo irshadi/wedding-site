@@ -16,7 +16,7 @@ export const CoupleViews = () => {
       />
       <Flex flexDir="column">
         <Flex flexDir={["column", "row"]} h={["auto", "37.5em"]} w="100%">
-          <Flex w={["100%", "60%"]}>
+          <Flex w={["100%", "55%"]}>
             <Image
               w="100%"
               src={`images/${theme}_irshadi.jpg`}
@@ -81,7 +81,7 @@ export const CoupleViews = () => {
           h={["auto", "37.5em"]}
           mt={["1em"]}
         >
-          <Flex w={["100%", "40%"]} bg={COLOR_MAP.BEIGE} fontFamily="Georgia">
+          <Flex w={["100%", "45%"]} bg={COLOR_MAP.BEIGE} fontFamily="Georgia">
             <Box p={["2em", "3em"]} textAlign="start">
               <Heading
                 fontFamily="MAK"
@@ -127,7 +127,7 @@ export const CoupleViews = () => {
               </Box>
             </Box>
           </Flex>
-          <Flex w={["100%", "60%"]}>
+          <Flex w={["100%", "55%"]}>
             <Image
               w="100%"
               src={`images/${theme}_larasati.jpg`}
