@@ -10,9 +10,12 @@ export const GalleryViews = () => {
   const { theme } = useColorMode();
   return (
     <Box id="gallery">
-      <SectionHeading title="Gallery" label="Taken from our pre wedding session" />
+      <SectionHeading
+        title="Gallery"
+        label="Taken from our pre wedding session"
+      />
 
-      <Grid templateColumns="repeat(6, 1fr)" gap={0}>
+      <Grid templateColumns={["repeat(2, 1fr)", "repeat(6, 1fr)"]} gap={0}>
         {Array.from({ length: 6 }).map((_, idx) => (
           <GridItem>
             <Image src={`images/${theme}_${idx + 1}.jpg`} />

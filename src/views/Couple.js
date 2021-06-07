@@ -12,13 +12,13 @@ import { GridItem } from "@chakra-ui/layout";
 export const CoupleViews = () => {
   const { theme } = useColorMode();
   return (
-    <Box mx="12.5em">
+    <Box mx={["2.5em", "12.5em"]}>
       <SectionHeading
         title="Happy Couple"
         label="A little bit of our background"
       />
-      <Grid templateColumns="repeat(2, 2fr)" gap={5}>
-        <GridItem bg="red" colSpan={1}>
+      <Grid templateColumns={["repeat(1, 1fr)", "repeat(2, 2fr)"]} gap={[0, 5]}>
+        <GridItem colSpan={1}>
           <Image src={`images/${theme}_irshadi.jpg`} fit="contain" />
         </GridItem>
         <GridItem bg={COLOR_MAP.BEIGE} fontFamily="Georgia" h="auto">
@@ -67,7 +67,7 @@ export const CoupleViews = () => {
             </Heading>
             <Box mt="1em">
               <Text>
-                Born July 25th, 1995. Graduated from Universitas Indonesia.
+                Born July 21st, 1995. Graduated from Universitas Indonesia.
                 (Fill your description here). Currently worked as Public
                 Relations for Indonesian Agency, SAC Indonesia.
               </Text>

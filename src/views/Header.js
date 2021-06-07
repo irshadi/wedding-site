@@ -13,8 +13,8 @@ export const HeaderViews = () => {
   const imgSource = "";
 
   return (
-    <Flex w="100%" h="40em">
-      <Flex w="50%" bg={bgColor}>
+    <Flex w="100%" h="40em" flexDir={["column", "row"]}>
+      <Flex w={["100%", "50%"]} bg={bgColor}>
         <Flex
           flexDir="column"
           w="100%"
@@ -24,6 +24,7 @@ export const HeaderViews = () => {
         >
           <Flex py="1em" mb="1em">
             <Heading
+              pt={["2em", 0]}
               fontSize="1em"
               fontFamily="Georgia"
               fontWeight="normal"
@@ -54,14 +55,14 @@ export const HeaderViews = () => {
               justifyContent="start"
               fontFamily="MAK"
               fontWeight="normal"
-              fontSize="4em"
+              fontSize={["2.5em", "4em"]}
               color={COLOR_MAP.CHARCOAL_SHADE_2}
             >
               LARASATI
             </Heading>
             <Heading
               fontFamily="MAK-bold"
-              fontSize="4em"
+              fontSize={["2.5em", "4em"]}
               px="0.5em"
               color={COLOR_MAP.CHARCOAL_SHADE_3}
             >
@@ -73,14 +74,14 @@ export const HeaderViews = () => {
             justifyContent="end"
             fontFamily="MAK"
             fontWeight="normal"
-            fontSize="4em"
+            fontSize={["2.5em", "4em"]}
             color={COLOR_MAP.CHARCOAL_SHADE_2}
           >
             BAGASPUTRO
           </Heading>
         </Flex>
       </Flex>
-      <Flex w="50%">
+      <Flex w={["100%", "50%"]} overflowY={["hidden", "visible"]}>
         <Image
           w="100%"
           src="images/traditional_main_header_alt.jpg"

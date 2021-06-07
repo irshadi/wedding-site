@@ -7,11 +7,11 @@ import { SectionHeading } from "../components/SectionHeading";
 export const StoriesViews = () => {
   const { theme } = useColorMode();
   return (
-    <Box pt="2.5em" mx="12.5em" id="our-story">
+    <Box pt="2.5em" mx={["2.5em", "12.5em"]} id="our-story">
       <SectionHeading title="Our Story" label="A glimpse of our story" />
-      <Grid templateColumns="repeat(2, 1fr)" gap={10}>
+      <Grid templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)"]} gap={10}>
         <Image src={`images/${theme}_main_header.jpg`} fit="cover" />
-        <Text fontFamily="Georgia">
+        <Text fontFamily="Georgia" textAlign="justify">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
           euismod blandit urna, id hendrerit nisi interdum ac. Vivamus at
           tincidunt eros. Proin tincidunt dapibus enim ac porta. Curabitur
