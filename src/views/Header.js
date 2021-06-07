@@ -5,12 +5,11 @@ import { useColorMode } from "../hooks/useColorMode";
 import { useColorModeValue } from "@chakra-ui/color-mode";
 import { Image } from "@chakra-ui/image";
 import { Button } from "@chakra-ui/button";
+import { FallbackImage } from "../components/Fallback/Image";
 
 export const HeaderViews = () => {
-  const { isUsingDarkMode } = useColorMode();
+  const { isUsingDarkMode, theme } = useColorMode();
   const bgColor = useColorModeValue(COLOR_MAP.BEIGE, COLOR_MAP.DARK_GRAY);
-  // FIXME
-  const imgSource = "";
 
   return (
     <Flex w="100%" h="40em" flexDir={["column", "row"]}>
@@ -84,8 +83,9 @@ export const HeaderViews = () => {
       <Flex w={["100%", "50%"]} overflowY={["hidden", "visible"]}>
         <Image
           w="100%"
-          src="images/traditional_main_header_alt.jpg"
+          src={`images/${theme}_main_header.jpg`}
           fit="cover"
+          fallback={<FallbackImage />}
         />
       </Flex>
     </Flex>

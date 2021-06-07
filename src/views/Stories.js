@@ -3,6 +3,7 @@ import { Box, Grid, Text } from "@chakra-ui/layout";
 import { Image } from "@chakra-ui/image";
 import { useColorMode } from "../hooks/useColorMode";
 import { SectionHeading } from "../components/SectionHeading";
+import { FallbackImage } from "../components/Fallback/Image";
 
 export const StoriesViews = () => {
   const { theme } = useColorMode();
@@ -10,7 +11,11 @@ export const StoriesViews = () => {
     <Box pt="2.5em" mx={["2.5em", "12.5em"]} id="our-story">
       <SectionHeading title="Our Story" label="A glimpse of our story" />
       <Grid templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)"]} gap={10}>
-        <Image src={`images/${theme}_main_header.jpg`} fit="cover" />
+        <Image
+          src={`images/${theme}_our_story.jpg`}
+          fit="cover"
+          fallback={<FallbackImage />}
+        />
         <Text fontFamily="Georgia" textAlign="justify">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
           euismod blandit urna, id hendrerit nisi interdum ac. Vivamus at
