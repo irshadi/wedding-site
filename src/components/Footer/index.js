@@ -7,14 +7,14 @@ export const Footer = () => {
     <Flex
       w="100%"
       py="2em"
-      px="10em"
+      px={["2.5em", "12.5em"]}
       mt="2em"
       fontFamily="Georgia"
       bg={COLOR_MAP.BEIGE}
+      justify="center"
     >
-      <Text w="100%" textAlign="center" fontWeight="bold">
-        © {new Date().getFullYear()} | Made from JKT - IDN
-      </Text>
+      <Text fontWeight="bold">© {new Date().getFullYear()}</Text>
+      <Text> | Made from JKT - IDN</Text>
     </Flex>
   );
 };
