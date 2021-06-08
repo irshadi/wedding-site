@@ -13,9 +13,7 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-  DrawerHeader,
-  DrawerBody,
-  DrawerFooter
+  DrawerBody
 } from "@chakra-ui/react";
 
 const SiteModeButton = () => {
