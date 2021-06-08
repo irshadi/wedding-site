@@ -140,14 +140,14 @@ export const InvitationViews = () => {
 
         <SectionHeading
           title="A few words from us"
-          label="Following COVID-19 Pandemic"
+          label="Our statement following COVID-19 Pandemic"
         />
         <hr />
         <Box w="100%" mt="2em" justifyContent="start">
-          <Text w="100%" textAlign="start" as="i">
+          <Text w="100%" textAlign="start" as="i" fontSize="1.25em">
             Dear family and friends,
           </Text>
-          <Text as="i">
+          <Text as="i" fontSize="1.25em">
             <br />
             <br />
             With COVID-19 still a growing concern, after thoughtful
@@ -157,7 +157,8 @@ export const InvitationViews = () => {
             <br />
             While we will definitely miss your presence, we invite you to stream
             our ceremony from the comfort of your home. We can’t wait to see you
-            there! Virtual event details for joining our special day are below.
+            on either Zoom or Youtube! Virtual event details for joining our
+            special day are below.
             <br />
             <br />
             We appreciate your understanding as we all try to navigate this
@@ -209,6 +210,29 @@ export const InvitationViews = () => {
             </Flex>
           )}
         </Box>
+
+        <SectionHeading
+          title="Digital Gifts"
+          label="Following COVID-19 Pandemic"
+        />
+
+        <Text fontFamily="Georgia">
+          To participate in completing our best moment, you can give digital
+          gifts through this website.
+        </Text>
+      </Flex>
+
+      <Flex flexDir="column" my="3em" w="100%" fontFamily="Georgia">
+        <Text as="i" fontSize="1.25em">
+          “And one of His signs is that He created mates for you from yourselves
+          that you may find rest in them, and He put between you love and
+          compassion; most surely there are signs in this for a people who
+          reflect.”
+        </Text>
+        <br />
+        <Text w="100%" as="i" textAlign="end">
+          Ar-Ruum: 21
+        </Text>
       </Flex>
     </Box>
   );
