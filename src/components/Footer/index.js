@@ -21,7 +21,9 @@ export const Footer = () => {
         <Text fontWeight="bold">
           selarasdenganbagas.com © {new Date().getFullYear()}
         </Text>
-        <Text fontFamily="Georgia">Made from JKT - IDN</Text>
+        <Text fontFamily="Georgia">
+          Developed by me, from Jakarta - Indonesia 🇮🇩
+        </Text>
       </Flex>
     </React.Fragment>
   );
