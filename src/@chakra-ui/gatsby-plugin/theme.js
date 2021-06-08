@@ -6,7 +6,7 @@ const styles = {
   global: props => ({
     body: {
       color: mode(COLOR_MAP.BEIGE_TINT_1, COLOR_MAP.DARK_GRAY_SHADE_0)(props),
-      bg: mode(COLOR_MAP.BEIGE_SHADE_0, COLOR_MAP.DARK_GRAY_TINT_3)(props)
+      bg: mode(COLOR_MAP.BEIGE_SHADE_0, COLOR_MAP.DARK_GRAY_TINT_2)(props)
     }
   })
 };

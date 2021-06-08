@@ -10,6 +10,15 @@ import { FallbackImage } from "../components/Fallback/Image";
 export const HeaderViews = () => {
   const { isUsingDarkMode, theme } = useColorMode();
   const bgColor = useColorModeValue(COLOR_MAP.BEIGE, COLOR_MAP.DARK_GRAY);
+  const darkestColor = useColorModeValue(
+    COLOR_MAP.BEIGE_TINT_2,
+    COLOR_MAP.DARK_GRAY_SHADE_3
+  );
+  const lightestColor = useColorModeValue(
+    COLOR_MAP.BEIGE_TINT_1,
+    COLOR_MAP.DARK_GRAY_SHADE_1
+  );
+  const objectPosition = useColorModeValue("0% 70%", "0% 50%");
 
   return (
     <Flex w="100%" h="40em" flexDir={["column", "row"]}>
@@ -27,7 +36,7 @@ export const HeaderViews = () => {
               fontSize="1em"
               fontFamily="Georgia"
               fontWeight="normal"
-              color={COLOR_MAP.CHARCOAL_SHADE_3}
+              color={darkestColor}
             >
               19.06.2021
             </Heading>
@@ -55,7 +64,7 @@ export const HeaderViews = () => {
               fontFamily="MAK"
               fontWeight="normal"
               fontSize={["2.5em", "4em"]}
-              color={COLOR_MAP.CHARCOAL_SHADE_2}
+              color={lightestColor}
             >
               LARASATI
             </Heading>
@@ -63,7 +72,7 @@ export const HeaderViews = () => {
               fontFamily="MAK-bold"
               fontSize={["2.5em", "4em"]}
               px="0.5em"
-              color={COLOR_MAP.CHARCOAL_SHADE_3}
+              color={darkestColor}
             >
               {"&"}
             </Heading>
@@ -74,7 +83,7 @@ export const HeaderViews = () => {
             fontFamily="MAK"
             fontWeight="normal"
             fontSize={["2.5em", "4em"]}
-            color={COLOR_MAP.CHARCOAL_SHADE_2}
+            color={lightestColor}
           >
             BAGASPUTRO
           </Heading>
@@ -86,6 +95,7 @@ export const HeaderViews = () => {
           src={`images/${theme}_main_header.jpg`}
           fit="cover"
           fallback={<FallbackImage />}
+          objectPosition={objectPosition}
         />
       </Flex>
     </Flex>

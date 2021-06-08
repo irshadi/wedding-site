@@ -17,24 +17,26 @@ export const StoriesViews = () => {
           fallback={<FallbackImage />}
         />
         <Text fontFamily="Georgia" textAlign="justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-          euismod blandit urna, id hendrerit nisi interdum ac. Vivamus at
-          tincidunt eros. Proin tincidunt dapibus enim ac porta. Curabitur
-          pretium pretium pretium. In hac habitasse platea dictumst. Nam aliquam
-          pulvinar magna eu convallis. Maecenas tortor dolor, cursus non leo
-          accumsan, fringilla placerat nisl. Sed tempus pretium lectus nec
-          vestibulum. Nunc laoreet felis non dolor tristique posuere. Nulla
-          aliquam scelerisque sodales. Nullam non enim et nibh rhoncus
-          fermentum. Aliquam sed lorem mattis, tincidunt ligula nec, lobortis
-          libero. Praesent ac fringilla felis, et cursus nisl.
+          Many people say that, you can find other boyfriends or girlfriends as
+          long as you want. However, best friend will always stay by your side.
+          People who will act as your last resort when you are in trouble. Now,
+          what will happen when your soulmate is also your best friend? Laras
+          and Bagas began their relationship from a casual friendship, became
+          best friends, and decided to enter the most serious step, marriage. We
+          met and hang with each other only after graduating from their Senior
+          High School. Our friendship story can be described with one word:
+          funny. We sought each other when both of us were in instability.
           <br />
           <br />
-          Quisque vitae pretium nunc. Fusce eget massa in leo egestas mattis.
-          Nulla quis maximus neque. Sed vitae est vel lorem volutpat molestie a
-          eget odio. Mauris nisi nisi, ullamcorper quis mauris in, semper
-          porttitor ante. Integer feugiat tortor at arcu fermentum, eu lobortis
-          nunc varius. Duis eleifend aliquam ultricies. Maecenas at efficitur
-          augue. Fusce pharetra nulla sed eros dignissim ornare ac eget dui.
+          Our story proved the truth said by an old Javanese proverb: “Witing
+          Tresno Jalaran Soko Kulino” Love happens through habit. God’s plan is
+          always the best. “Let’s grow together,” is our motto. We know, we
+          know! Thinking about the turn of events that happened to us never fail
+          to put smile in our faces, for it never ceases to amaze us! Knowing
+          that both of us have so many things in common to cheer about, and also
+          many different things that made us complete each other. We share same
+          dreams and that makes us ready for a commitment that will last through
+          our lifetimes. Until forever, on it goes.
         </Text>
       </Grid>
     </Box>

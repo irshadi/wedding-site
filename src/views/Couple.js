@@ -5,9 +5,11 @@ import { useColorMode } from "../hooks/useColorMode";
 import { Heading, Flex, Text, Box } from "@chakra-ui/layout";
 import { COLOR_MAP } from "../constants/color";
 import { FallbackImage } from "../components/Fallback/Image";
+import { useColorModeValue } from "@chakra-ui/color-mode";
 
 export const CoupleViews = () => {
   const { theme } = useColorMode();
+  const bgBoxColor = useColorModeValue(COLOR_MAP.BEIGE, COLOR_MAP.DARK_GRAY);
   return (
     <Box mx={["2.5em", "12.5em"]}>
       <SectionHeading
@@ -27,7 +29,7 @@ export const CoupleViews = () => {
           </Flex>
           <Flex
             w={["100%", "45%"]}
-            bg={COLOR_MAP.BEIGE}
+            bg={bgBoxColor}
             fontFamily="Georgia"
             h="auto"
           >
@@ -81,7 +83,7 @@ export const CoupleViews = () => {
           h={["auto", "37.5em"]}
           mt={["1em"]}
         >
-          <Flex w={["100%", "45%"]} bg={COLOR_MAP.BEIGE} fontFamily="Georgia">
+          <Flex w={["100%", "45%"]} bg={bgBoxColor} fontFamily="Georgia">
             <Box p={["2em", "3em"]} textAlign="start">
               <Heading
                 fontFamily="MAK"
