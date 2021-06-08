@@ -179,7 +179,6 @@ export const InvitationViews = () => {
               mr={[0, ".25em"]}
               mt={["1em", 0]}
               w={["80%", "100%"]}
-              isDisabled={isButtonDisabled}
               alignSelf="center"
             >
               Stream from Youtube
@@ -195,7 +194,6 @@ export const InvitationViews = () => {
               ml={[0, ".25em"]}
               mt={["1em", 0]}
               w={["80%", "100%"]}
-              isDisabled={isButtonDisabled}
               alignSelf="center"
             >
               Stream from Zoom
@@ -205,7 +203,7 @@ export const InvitationViews = () => {
             <Flex flexDir={["column", "row"]} justify="center" align="center">
               <Button cursor="default" isLoading variant="ghost" />
               <Text as="i" mt=".25em">
-                Link will be available and active in {getRelativeTime()}
+                Will be Live {getRelativeTime()}
               </Text>
             </Flex>
           )}
