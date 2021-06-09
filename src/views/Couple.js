@@ -18,13 +18,13 @@ export const CoupleViews = () => {
       />
       <Flex flexDir="column">
         <Flex flexDir={["column", "row"]} h={["auto", "37.5em"]} w="100%">
-          <Flex w={["100%", "55%"]} maxH={["25em", "auto"]}>
+          <Flex w={["100%", "55%"]} maxH={["25em", "37.5em"]}>
             <Image
               w="100%"
               src={`images/${theme}_irshadi.jpg`}
               fit="cover"
               fallback={<FallbackImage />}
-              objectPosition={["0% 75%"]}
+              objectPosition={["center center"]}
             />
           </Flex>
           <Flex
@@ -82,6 +82,7 @@ export const CoupleViews = () => {
           flexDir={["column-reverse", "row"]}
           h={["auto", "37.5em"]}
           mt={["1em"]}
+          w="100%"
         >
           <Flex w={["100%", "45%"]} bg={bgBoxColor} fontFamily="Georgia">
             <Box p={["2em", "3em"]} textAlign="start">
@@ -129,13 +130,13 @@ export const CoupleViews = () => {
               </Box>
             </Box>
           </Flex>
-          <Flex w={["100%", "55%"]} maxH={["25em", "auto"]}>
+          <Flex w={["100%", "55%"]} maxH={["25em", "37.5em"]}>
             <Image
               w="100%"
               src={`images/${theme}_larasati.jpg`}
               fit="cover"
               fallback={<FallbackImage />}
-              objectPosition={["0% 62.5%"]}
+              objectPosition={["center center"]}
             />
           </Flex>
         </Flex>

@@ -20,7 +20,7 @@ export const HeaderViews = () => {
     COLOR_MAP.BEIGE_TINT_1,
     COLOR_MAP.DARK_GRAY_SHADE_1
   );
-  const objectPosition = useColorModeValue("0% 70%", "0% 50%");
+  const objectPosition = useColorModeValue("center 70%", "center 40%");
 
   return (
     <Flex w="100%" h="40em" flexDir={["column", "row"]}>
@@ -65,9 +65,6 @@ export const HeaderViews = () => {
               fontSize="1em"
               fontFamily="Georgia"
               fontWeight="normal"
-              // _hover={{ bg: lightestColor, opacity: 1 }}
-              // _active={{ bg: lightestColor, opacity: 1 }}
-              // _selected={{ bg: lightestColor, opacity: 1 }}
             >
               Watch
             </Button>
