@@ -19,6 +19,7 @@
     "@chakra-ui/react": "^1.6.3",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
+    "commentbox.io": "^2.1.0",
     "framer-motion": "^4.1.17",
     "gatsby": "^3.4.1",
     "gatsby-plugin-image": "^1.6.0",

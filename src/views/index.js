@@ -1,4 +1,5 @@
 import React from "react";
+import { CommentViews } from "./Comment";
 import { CoupleViews } from "./Couple";
 import { DateViews } from "./Date";
 import { GalleryViews } from "./Gallery";
@@ -13,6 +14,7 @@ export const MainPage = () => {
       <CoupleViews />
       <DateViews />
       <GalleryViews />
+      <CommentViews />
     </React.Fragment>
   );
 };

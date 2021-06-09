@@ -6,6 +6,7 @@ import { COLOR_MAP } from "../constants/color";
 import { useCountdown, COUNTDOWN_STATUS_MAP } from "../hooks/useCountdown";
 import { Button } from "@chakra-ui/button";
 import { SiYoutube, SiZoom } from "react-icons/si";
+import { CommentViews } from "./Comment";
 
 export const InvitationViews = () => {
   const { getCountdownEnum, getRelativeTime } = useCountdown();
@@ -211,6 +212,8 @@ export const InvitationViews = () => {
           gifts through this website.
         </Text>
       </Flex>
+
+      <CommentViews />
 
       <Flex flexDir="column" my="3em" w="100%" fontFamily="Georgia">
         <Text as="i" fontSize="1.25em">
