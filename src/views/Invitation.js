@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Flex,
-  Heading,
-  Text,
-  Box,
-  Divider,
-  Grid,
-  Link
-} from "@chakra-ui/layout";
+import { Flex, Heading, Text, Box, Divider, Grid } from "@chakra-ui/layout";
 import { SectionHeading } from "../components/SectionHeading";
 import { useColorModeValue } from "@chakra-ui/color-mode";
 import { COLOR_MAP } from "../constants/color";

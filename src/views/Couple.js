@@ -18,13 +18,13 @@ export const CoupleViews = () => {
       />
       <Flex flexDir="column">
         <Flex flexDir={["column", "row"]} h={["auto", "37.5em"]} w="100%">
-          <Flex w={["100%", "55%"]}>
+          <Flex w={["100%", "55%"]} maxH={["25em", "auto"]}>
             <Image
               w="100%"
               src={`images/${theme}_irshadi.jpg`}
               fit="cover"
               fallback={<FallbackImage />}
-              objectPosition={["0 75%"]}
+              objectPosition={["0% 75%"]}
             />
           </Flex>
           <Flex
@@ -129,13 +129,13 @@ export const CoupleViews = () => {
               </Box>
             </Box>
           </Flex>
-          <Flex w={["100%", "55%"]}>
+          <Flex w={["100%", "55%"]} maxH={["25em", "auto"]}>
             <Image
               w="100%"
               src={`images/${theme}_larasati.jpg`}
               fit="cover"
               fallback={<FallbackImage />}
-              objectPosition={["0 62.5%"]}
+              objectPosition={["0% 62.5%"]}
             />
           </Flex>
         </Flex>

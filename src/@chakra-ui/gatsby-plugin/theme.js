@@ -11,4 +11,15 @@ const styles = {
   })
 };
 
-export default extendTheme({ styles });
+const components = {
+  Divider: {
+    baseStyle: ({ colorMode }) => ({
+      borderColor:
+        colorMode === "dark"
+          ? COLOR_MAP.DARK_GRAY_SHADE_0
+          : COLOR_MAP.BEIGE_TINT_1
+    })
+  }
+};
+
+export default extendTheme({ styles, components });

@@ -1,14 +1,16 @@
 import React from "react";
-import { Flex, Heading, Text, Box } from "@chakra-ui/layout";
+import { Flex, Heading, Box } from "@chakra-ui/layout";
 import { COLOR_MAP } from "../constants/color";
 import { useColorMode } from "../hooks/useColorMode";
 import { useColorModeValue } from "@chakra-ui/color-mode";
 import { Image } from "@chakra-ui/image";
 import { Button } from "@chakra-ui/button";
 import { FallbackImage } from "../components/Fallback/Image";
+import { SiYoutube } from "react-icons/si";
+import { Divider } from "@chakra-ui/layout";
 
 export const HeaderViews = () => {
-  const { isUsingDarkMode, theme } = useColorMode();
+  const { theme } = useColorMode();
   const bgColor = useColorModeValue(COLOR_MAP.BEIGE, COLOR_MAP.DARK_GRAY);
   const darkestColor = useColorModeValue(
     COLOR_MAP.BEIGE_TINT_2,
@@ -30,9 +32,15 @@ export const HeaderViews = () => {
           justifyContent="flex-end"
           p="2em"
         >
-          <Flex py="1em" mb="1em">
+          <Flex
+            justify="space-between"
+            align="center"
+            w="100%"
+            mb="2em"
+            mt={["3.5em", 0]}
+          >
             <Heading
-              pt={["2em", 0]}
+              w={["35%", "25%"]}
               fontSize="1em"
               fontFamily="Georgia"
               fontWeight="normal"
@@ -40,24 +48,30 @@ export const HeaderViews = () => {
             >
               19.06.2021
             </Heading>
-          </Flex>
-          {/* <Flex>
+            <Divider w={["25%", "45%"]} mt=".25em" />
             <Button
-              isDisabled={true}
-              bg={COLOR_MAP.CHARCOAL_SHADE_2}
-              color={COLOR_MAP.BEIGE}
-            >
-              Watch Live Straming
-            </Button>
-            <Text
+              w="30%"
+              as="a"
+              textAlign="start"
+              variant="link"
+              href="http://bit.ly/selarasdenganbagas"
+              isExternal
+              target="_blank"
+              bg={"transparent"}
+              color={lightestColor}
+              rightIcon={<SiYoutube />}
+              mr={[0, ".25em"]}
+              alignSelf="center"
               fontSize="1em"
               fontFamily="Georgia"
               fontWeight="normal"
-              color={COLOR_MAP.CHARCOAL_SHADE_3}
+              // _hover={{ bg: lightestColor, opacity: 1 }}
+              // _active={{ bg: lightestColor, opacity: 1 }}
+              // _selected={{ bg: lightestColor, opacity: 1 }}
             >
-              In a week
-            </Text>
-          </Flex> */}
+              Watch
+            </Button>
+          </Flex>
           <Flex w="100%" justify="start">
             <Heading
               justifyContent="start"

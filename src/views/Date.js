@@ -51,7 +51,24 @@ export const DateViews = () => {
 
   return status === COUNTDOWN_STATUS_MAP.AFTER ? null : (
     <Box mx={[0, "12.5em"]} mt="2em">
-      <SectionHeading title="Event Date" label="Countdown to our wedding day" />
+      <SectionHeading title="Event Date" label="Event will be held on" />
+
+      <Flex
+        w="100%"
+        textAlign="center"
+        flexDir="column"
+        fontFamily="Georgia"
+        mb="2em"
+      >
+        <Heading fontFamily="MAK">
+          Saturday, <br />
+          June 19th 2021
+        </Heading>
+        <Heading fontFamily="MAK" mt=".5em">
+          16:00 - 17:00
+        </Heading>
+      </Flex>
+
       <Flex
         bg={bgBoxColor}
         p={[".5em", "2em"]}
