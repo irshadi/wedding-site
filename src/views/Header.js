@@ -40,7 +40,7 @@ export const HeaderViews = () => {
             mt={["3.5em", 0]}
           >
             <Heading
-              w={["35%", "25%"]}
+              w={["30%", "25%"]}
               fontSize="1em"
               fontFamily="Georgia"
               fontWeight="normal"
@@ -48,7 +48,7 @@ export const HeaderViews = () => {
             >
               19.06.2021
             </Heading>
-            <Divider w={["25%", "45%"]} mt=".25em" />
+            <Divider w={["30%", "45%"]} mt=".25em" />
             <Button
               w="30%"
               as="a"
