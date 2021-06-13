@@ -7,6 +7,7 @@ import { useCountdown, COUNTDOWN_STATUS_MAP } from "../hooks/useCountdown";
 import { Button } from "@chakra-ui/button";
 import { SiYoutube, SiZoom } from "react-icons/si";
 import { CommentViews } from "./Comment";
+import { Image } from "@chakra-ui/image";
 
 export const InvitationViews = () => {
   const { getCountdownEnum, getRelativeTime } = useCountdown();
@@ -211,9 +212,12 @@ export const InvitationViews = () => {
           To participate in completing our best moment, you can give digital
           gifts through this website.
         </Text>
+        <Flex justify="center" py="2em">
+          <Image src="images/qr.png" />
+        </Flex>
       </Flex>
 
-      <CommentViews />
+      {/* <CommentViews /> */}
 
       <Flex flexDir="column" my="3em" w="100%" fontFamily="Georgia">
         <Text as="i" fontSize="1.25em">

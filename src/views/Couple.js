@@ -96,7 +96,8 @@ export const CoupleViews = () => {
               <Box mt="1em">
                 <Text textAlign="justify">
                   Born July 21st, 1995. Graduated from Universitas Indonesia.
-                  (Fill your description here). Currently worked as Public
+                  She is a good listener and soon to be an amazing lifetime
+                  partner for Irshadi Bagasputro. Currently worked as Public
                   Relations for Indonesian Agency, SAC Indonesia.
                 </Text>
                 <Flex
