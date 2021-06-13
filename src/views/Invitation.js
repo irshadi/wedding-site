@@ -213,7 +213,7 @@ export const InvitationViews = () => {
           gifts through this website.
         </Text>
         <Flex justify="center" py="2em">
-          <Image src="images/qr.png" />
+          <Image src="images/qr.jpg" />
         </Flex>
       </Flex>
 

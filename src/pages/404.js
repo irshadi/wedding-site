@@ -1,9 +1,5 @@
 import React from "react";
-import { Flex } from "@chakra-ui/layout";
-import { Heading } from "@chakra-ui/layout";
-import { Text } from "@chakra-ui/layout";
-import { Button } from "@chakra-ui/button";
-import { Link } from "gatsby";
+import { Flex, Heading, Text } from "@chakra-ui/layout";
 
 const NotFoundPage = () => {
   return (
